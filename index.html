@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+    <head>
+        <link href="style.css" type="text/css" rel="stylesheet">
+    </head>
+    <body>
+        <canvas id="paint"></canvas>
+        <canvas id="video"></canvas>
+        <canvas class="photo"></canvas>
+        <video class="player"></video>
+        <div class="strip"></div>
+
+        <div id="color-selector">
+            <div class="marker selected" id="black"></div>
+            <div class="marker" id="purple"></div>
+            <div class="marker" id="red"></div>
+            <div class="marker" id="blue"></div>
+            <div class="marker" id="green"></div>
+            <div class="marker" id="orange"></div>
+            <div class="marker" id="yellow"></div>
+            <div class="marker" id="brown"></div>
+        </div>
+        <audio class="snap" src="http://wesbos.com/demos/photobooth/snap.mp3" hidden></audio>
+
+        <script src="event-emitter.js"></script>
+        <script src="whiteboard.js"></script>
+        <script src="socket.io/socket.io.js"></script>
+        <script src="app.js"></script>
+        <script src="video.js"></script>
+    </body>
+</html>
